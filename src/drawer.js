@@ -122,19 +122,12 @@ class MiniDrawer extends React.Component {
     const { classes, theme } = this.props;
     const { auth, anchorEl } = this.state;
     const open = Boolean(anchorEl);
-
+ 
 
     return (
       
       <div className={classes.root}>
-       <FormGroup>
-          <FormControlLabel
-            control={
-              <Switch checked={auth} onChange={this.handleChange} aria-label="LoginSwitch" />
-            }
-            label={auth ? 'Logout' : 'Login'}
-          />
-       </FormGroup>
+ 
 
         <AppBar position="1"
           className={classNames(classes.appBar, this.state.open && classes.appBarShift)}
